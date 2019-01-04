@@ -24,5 +24,5 @@ CREATE TABLE `players` (<br>
  `experience` int(7) unsigned DEFAULT NULL,<br>
  PRIMARY KEY (`id`),<br>
  UNIQUE KEY `nickname` (`nickname`)<br>
-);
+);<br>
 I used phpmyadmin for the database setup.
