@@ -14,3 +14,14 @@ Dice War is a local game between two players.<br>
                 -if you cannot make the generated rectangle you skip your turn;<br>
                 -when all space is filled the game ends;<br>
                 -the one with the most territory wins.<br>
+<br>
+To set up the website create a database named 'dicewar' then create a table with the following sql command:<br>
+CREATE TABLE `players` (<br>
+ `id` int(10) unsigned NOT NULL AUTO_INCREMENT,<br>
+ `nickname` varchar(30) NOT NULL,<br>
+ `password` varchar(40) NOT NULL,<br>
+ `email` varchar(100) NOT NULL,<br>
+ `experience` int(7) unsigned DEFAULT NULL,<br>
+ PRIMARY KEY (`id`),<br>
+ UNIQUE KEY `nickname` (`nickname`)<br>
+);
