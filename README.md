@@ -15,7 +15,7 @@ Dice War is a local game between two players.<br>
                 -when all space is filled the game ends;<br>
                 -the one with the most territory wins.<br>
 <br>
-To set up the website create a database named 'dicewar' then create a table with the following sql command:<br>
+To set up the website, create a database named 'dicewar' then create a table with the following sql command:<br>
 CREATE TABLE `players` (<br>
  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,<br>
  `nickname` varchar(30) NOT NULL,<br>
@@ -25,3 +25,4 @@ CREATE TABLE `players` (<br>
  PRIMARY KEY (`id`),<br>
  UNIQUE KEY `nickname` (`nickname`)<br>
 );
+I used phpmyadmin for the database setup.
