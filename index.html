@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home - DiceWar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
+    <link rel="icon" href="./favicon.ico">
+</head>
+<body>
+    <div class="content">
+        <nav class="nav">
+            <a href="./" class="logo">
+                Dice War
+            </a>
+            <ul>
+                <li><a href="./register/register.html">Register</a></li>
+                <li><a href="./about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="game-container">
+            <div id="first-player"></div>
+            <div class="middle">
+                <div id="auth-panel">
+                    <form class="login-form">
+                        <h2 id="currlog-player">1st player</h2>
+                        <!--<label for="name" class="tag">Nickname</label>-->
+                        <input type="text" name="name" id="name" class="field" placeholder="Nickname">
+                        <!--<label for="pass" class="tag">Password</label>-->
+                        <input type="password" name="pass" id="pass" class="field" placeholder="Password">
+                        <p>
+                            <input type="submit" value="Login" id="login-btn" class="btn">
+                        </p>
+                        <p id="silly"></p>
+                        <img src="./images/ajax-loader.svg" alt="loading-img" style="display:none" id="load-img">
+                    </form>
+                </div>
+                <div class="board-container">
+                    <span class="pin"></span>
+                    <div class="game-over">
+                        <h1>_</h1>
+                        <p>
+                            <input type="submit" value="Rematch" id="rematch-btn" class="btn-scnd">
+                        </p>
+                    </div>
+                </div>
+                <a class="roll-dice-btn" style="display: none;">Roll Dice</a>
+            </div>
+            <div id="second-player"></div>
+            <div id="edit-panel">
+                <form class="stylized-form">
+                    <h2 id="edit-title">_</h2>
+                    <label for="oldpass" class="tag">Old password</label>
+                    <input type="password" name="oldpass" id="oldpass" class="field">
+                    <label for="newpass" class="tag">New password</label>
+                    <input type="password" name="newpass" id="newpass" class="field">
+    
+                    <p>
+                        <input type="submit" value="Change password" id="done-btn" class="btn">
+                    </p>
+                    <p>
+                        <input type="submit" value="Delete account" id="dltacc-btn" class="btn">
+                    </p>
+                    <span id="oldpass-info" class="tag"></span>
+                    <span id="newpass-info" class="tag"></span>
+                    <span id="close-btn">X</span>
+                </form>
+            </div>
+        </div>
+        <div class="container">
+            <p class="game-explain">
+                Dice War is a local game between two players.<br>
+                The game's scope is to conquer terrain. The game ends when there is no more terrain left to be conquered. The player with the most conquered terrain at the end of the game wins.<br>
+                <br>
+                <b>RULES:</b><br>
+                -roll two dice;<br>
+                -the player with the highest rolled dice starts;<br>
+                -continue rolling dice;<br>
+                -make a rectangle with the sides generated;<br>
+                -you cannot block unconquered terrain from the other player;<br>
+                -the first player's first rectangle is placed in the indicated corner. The second player first rectangle in the opposing corner;<br>
+                -the rectangle must be connected to your existing territory;<br>
+                -if your dice are equal you can either make a rectangle with those sides generated or a 1 x 1 rectangle;<br>
+                -if you cannot make the generated rectangle you skip your turn;<br>
+                -when all space is filled the game ends;<br>
+                -the one with the most territory wins.<br>
+            </p>
+        </div>
+    </div>
+    <footer class="footer">
+        <div>Copyright 2019 @grciprian</div>
+        <div>
+            <a href="https://www.instagram.com/grciprian/"><span class="social-icon instagram"></span></a>
+            <a href="https://www.facebook.com/grciprian"><span class="social-icon facebook"></span></a>
+            <a href="https://www.youtube.com/channel/UCrhVLyDzeJFSISFxPHFysiQ"><span class="social-icon youtube"></span></a>
+        </div>
+    </footer>
+    
+    <script src="login_manager.js"></script>
+    <script src="input_manager.js"></script>
+    <script src="html_actuator.js"></script>
+    <script src="player.js"></script>
+    <script src="game_manager.js"></script>
+    <script src="application.js"></script>
+</body>
+</html>

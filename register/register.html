@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register - DiceWar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
+    <link rel="icon" href="../favicon.ico">
+</head>
+<body>
+    <div class="content">
+        <nav class="nav">
+            <a href="../" class="logo">
+                Dice War
+            </a>
+            <ul>
+                <li><a href="../register/register.html">Register</a></li>
+                <li><a href="../about.html">About</a></li>
+            </ul>
+        </nav>
+        <div class="form-container">
+            <form class="stylized-form">
+                <label for="name" class="tag">Nickname</label>
+                <input type="text" name="name" id="name" class="field" required>
+
+                <label for="pass" class="tag">Password</label>
+                <input type="password" name="pass" id="pass" class="field" required>
+
+                <label for="mail" class="tag">Email</label>
+                <input type="email" name="mail" id="mail" class="field" required>
+
+                <input type="checkbox" name="check" id="check" required>
+                <label for="check" style="color: #f5f6fa">Terms and conditions</label>
+
+                <p>
+                    <input type="submit" value="Register" id="register-btn" class="btn">
+                </p>
+                <span id="name-info" class="tag"></span>
+                <span id="pass-info" class="tag"></span>
+                <span id="mail-info" class="tag"></span>
+                <span id="term-info" class="tag"></span>
+                <p id="message"></p>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div>Copyright 2019 @grciprian</div>
+        <div>
+            <a href="https://www.instagram.com/grciprian/"><span class="social-icon instagram"></span></a>
+            <a href="https://www.facebook.com/grciprian"><span class="social-icon facebook"></span></a>
+            <a href="https://www.youtube.com/channel/UCrhVLyDzeJFSISFxPHFysiQ"><span class="social-icon youtube"></span></a>
+        </div>
+    </footer>
+    <script src="register.js"></script>
+</body>
+</html>
