@@ -1,8 +1,8 @@
 <?php
-    $servername = "databases.000webhost.com";
-    $username = "id8112007_root";
-    $password = "db4test";
-    $dbname = "id8112007_dicewar";
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "dicewar";
     
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
